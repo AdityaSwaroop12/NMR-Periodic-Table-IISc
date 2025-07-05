@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NMR Periodic Table</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+     <nav>
+        <div class="image">
+            <img src = "logo.png" alt="IISc">
+        </div>
+        <div class = "calc">
+            <h1>NMR Periodic Table</h1>
+        </div>
+        <div class="magres">
+            <img src = "Lab logo.png" alt="Magres Lab">
+        </div>
+    </nav>
+    <div class="spins">
+        <img src="spins.png" class="spin-img" alt="spin images">
+    </div>
+
+    <div class="line1">
+        <div class="box hydrogen leftmost">
+            <div class="imp">
+                <div class="num">1</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">H</div>
+            <div class="text">Hydrogen</div>
+        </div>
+        <div class="box helium rightmost">
+            <div class="imp">
+                <div class="num">2</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">He</div>
+            <div class="text" id="helium">Helium</div>
+        </div>
+    </div>
+    <div class="line2">
+        <div class="part1">
+            <div class="box lithium">
+                <div class="imp">
+                    <div class="num">3</div>
+                    <img src = "quadrupole spin.png" alt="spin">
+                </div>
+                <div class="symbol">Li</div>
+                <div class="text">Lithium</div>
+            </div>
+            <div class="box beryllium">
+                <div class="imp">
+                    <div class="num">4</div>
+                    <img src = "quadrupole spin.png" alt="spin">
+                </div>
+                <div class="symbol">Be</div>
+                <div class="text">Beryllium</div>
+            </div>
+        </div>
+        <div class="part2">
+            <div class="box boron">
+                <div class="imp">
+                    <div class="num">5</div>
+                    <img src = "quadrupole spin.png" alt="spin">
+                </div>
+                <div class="symbol">B</div>
+                <div class="text" id="boron">Boron</div>
+            </div>
+            <div class="box carbon">
+                <div class="imp">
+                    <div class="num">6</div>
+                    <img src = "no spin.png" alt="spin">
+                </div>
+                <div class="symbol">C</div>
+                <div class="text" id="carbon">Carbon</div>
+            </div>
+            <div class="box nitrogen rightmost">
+                <div class="imp">
+                    <div class="num">7</div>
+                    <img src = "integral spin.png" alt="spin">
+                </div>
+                <div class="symbol">N</div>
+                <div class="text">Nitrogen</div>
+            </div>
+            <div class="box oxygen rightmost">
+                <div class="imp">
+                    <div class="num">8</div>
+                    <img src = "quadrupole spin.png" alt="spin">
+                </div>
+                <div class="symbol">O</div>
+                <div class="text">Oxygen</div>
+            </div>
+            <div class="box fluorine rightmost">
+                <div class="imp">
+                    <div class="num">9</div>
+                    <img src = "half spin.png" alt="spin">
+                </div>
+                <div class="symbol">F</div>
+                <div class="text">Fluorine</div>
+            </div>
+            <div class="box neon rightmost">
+                <div class="imp">
+                    <div class="num">10</div>
+                    <img src = "quadrupole spin.png" alt="spin">
+                </div>
+                <div class="symbol">Ne</div>
+                <div class="text" id="neon">Neon</div>
+            </div>
+        </div>
+    </div>
+    <div class="line3">
+        <div class="part1">
+            <div class="box sodium">
+                <div class="imp">
+                    <div class="num">11</div>
+                    <img src = "quadrupole spin.png" alt="spin">
+                </div>
+                <div class="symbol">Na</div>
+                <div class="text" id="sodium">Sodium</div>
+            </div>
+            <div class="box magnesium">
+                <div class="imp">
+                    <div class="num">12</div>
+                    <img src = "quadrupole spin.png" alt="spin">
+                </div>
+                <div class="symbol">Mg</div>
+                <div class="text">Magnesium</div>
+            </div>
+        </div>
+        <div class="part2">
+            <div class="box aluminium">
+                <div class="imp">
+                    <div class="num">13</div>
+                    <img src = "quadrupole spin.png" alt="spin">
+                </div>
+                <div class="symbol">Al</div>
+                <div class="text">Aluminium</div>
+            </div>
+            <div class="box silicon">
+                <div class="imp">
+                    <div class="num">14</div>
+                    <img src = "half spin.png" alt="spin">
+                </div>
+                <div class="symbol">Si</div>
+                <div class="text" id="silicon">Silicon</div>
+            </div>
+            <div class="box phosphorous rightmost">
+                <div class="imp">
+                    <div class="num">15</div>
+                    <img src = "half spin.png" alt="spin">
+                </div>
+                <div class="symbol">P</div>
+                <div class="text" id="P">Phosphorous</div>
+            </div>
+            <div class="box sulphur rightmost">
+                <div class="imp">
+                    <div class="num">16</div>
+                    <img src = "quadrupole spin.png" alt="spin">
+                </div>
+                <div class="symbol">S</div>
+                <div class="text">Sulphur</div>
+            </div>
+            <div class="box chlorine rightmost">
+                <div class="imp">
+                    <div class="num">17</div>
+                    <img src = "quadrupole spin.png" alt="spin">
+                </div>
+                <div class="symbol">Cl</div>
+                <div class="text">Chlorine</div>
+            </div>
+            <div class="box argon rightmost">
+                <div class="imp">
+                    <div class="num">18</div>
+                    <img src = "no spin.png" alt="spin">
+                </div>
+                <div class="symbol">Ar</div>
+                <div class="text" id="argon">Argon</div>
+            </div>
+        </div>
+    </div>
+    <div class="line4">
+        <div class="box potassium">
+            <div class="imp">
+                    <div class="num">19</div>
+                    <img src = "quadrupole spin.png" alt="spin">
+                </div>
+            <div class="symbol">K</div>
+            <div class="text">Potassium</div>
+        </div>
+        <div class="box calcium">
+            <div class="imp">
+                <div class="num">20</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Ca</div>
+            <div class="text">Calcium</div>
+        </div>
+        <div class="box scandium">
+            <div class="imp">
+                <div class="num">21</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Sc</div>
+            <div class="text">Scandium</div>
+        </div>
+        <div class="box titanium">
+            <div class="imp">
+                <div class="num">22</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Ti</div>
+            <div class="text">Titanium</div>
+        </div>
+        <div class="box vanadium">
+            <div class="imp">
+                <div class="num">23</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">V</div>
+            <div class="text">Vanadium</div>
+        </div>
+        <div class="box chromium">
+            <div class="imp">
+                <div class="num">24</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Cr</div>
+            <div class="text">Chromium</div>
+        </div>
+        <div class="box manganese">
+            <div class="imp">
+                <div class="num">25</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Mn</div>
+            <div class="text">Manganese</div>
+        </div>
+        <div class="box iron">
+            <div class="imp">
+                <div class="num">26</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">Fe</div>
+            <div class="text" id="iron">Iron</div>
+        </div>
+        <div class="box cobalt">
+            <div class="imp">
+                <div class="num">27</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Co</div>
+            <div class="text" id="cobalt">Cobalt</div>
+        </div>
+        <div class="box nickel">
+            <div class="imp">
+                <div class="num">28</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Ni</div>
+            <div class="text" id="nickel">Nickel</div>
+        </div>
+        <div class="box copper">
+            <div class="imp">
+                <div class="num">29</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Cu</div>
+            <div class="text" id="copper">Copper</div>
+        </div>
+        <div class="box zinc">
+            <div class="imp">
+                <div class="num">30</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Zn</div>
+            <div class="text" id="zinc">Zinc</div>
+        </div>
+        <div class="box gallium">
+            <div class="imp">
+                <div class="num">31</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Ga</div>
+            <div class="text" id="gallium">Gallium</div>
+        </div>
+        <div class="box germanium">
+            <div class="imp">
+                <div class="num">32</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Ge</div>
+            <div class="text">Germanium</div>
+        </div>
+        <div class="box arsenic rightmost">
+            <div class="imp">
+                <div class="num">33</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">As</div>
+            <div class="text" id="arsenic">Arsenic</div>
+        </div>
+        <div class="box selenium rightmost">
+            <div class="imp">
+                <div class="num">34</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">Se</div>
+            <div class="text">Selenium</div>
+        </div>
+        <div class="box bromine rightmost">
+            <div class="imp">
+                <div class="num">35</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Br</div>
+            <div class="text">Bromine</div>
+        </div>
+        <div class="box krypton rightmost">
+            <div class="imp">
+                <div class="num">36</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Kr</div>
+            <div class="text">Krypton</div>
+        </div>
+    </div>
+
+    <div class="line5">
+        <div class="box rubidium">
+            <div class="imp">
+                <div class="num">37</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Rb</div>
+            <div class="text">Rubidium</div>
+        </div>
+        <div class="box strontium">
+            <div class="imp">
+                <div class="num">38</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Sr</div>
+            <div class="text">Strontium</div>
+        </div>
+        <div class="box yttrium">
+            <div class="imp">
+                <div class="num">39</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">Y</div>
+            <div class="text">Yttrium</div>
+        </div>
+        <div class="box zirconium">
+            <div class="imp">
+                <div class="num">40</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Zr</div>
+            <div class="text">Zirconium</div>
+        </div>
+        <div class="box niobium">
+            <div class="imp">
+                <div class="num">41</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Nb</div>
+            <div class="text">Niobium</div>
+        </div>
+        <div class="box molybdenum">
+            <div class="imp">
+                <div class="num">42</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Mo</div>
+            <div class="text">Molybdenum</div>
+        </div>
+        <div class="box technetium">
+            <div class="imp">
+                <div class="num">43</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Tc</div>
+            <div class="text">Technetium</div>
+        </div>
+        <div class="box ruthenium">
+            <div class="imp">
+                <div class="num">44</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Ru</div>
+            <div class="text">Ruthenium</div>
+        </div>
+        <div class="box rhodium">
+            <div class="imp">
+                <div class="num">45</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">Rh</div>
+            <div class="text">Rhodium</div>
+        </div>
+        <div class="box palladium">
+            <div class="imp">
+                <div class="num">46</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Pd</div>
+            <div class="text">Palladium</div>
+        </div>
+        <div class="box silver">
+            <div class="imp">
+                <div class="num">47</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">Ag</div>
+            <div class="text" id="silver">Silver</div>
+        </div>
+        <div class="box cadmium">
+            <div class="imp">
+                <div class="num">48</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">Cd</div>
+            <div class="text">Cadmium</div>
+        </div>
+        <div class="box indium">
+            <div class="imp">
+                <div class="num">49</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">In</div>
+            <div class="text" id="indium">Indium</div>
+        </div>
+        <div class="box tin">
+            <div class="imp">
+                <div class="num">50</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">Sn</div>
+            <div class="text" id="tin">Tin</div>
+        </div>
+        <div class="box antimony rightmost">
+            <div class="imp">
+                <div class="num">51</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Sb</div>
+            <div class="text">Antimony</div>
+        </div>
+        <div class="box tellurium rightmost">
+            <div class="imp">
+                <div class="num">52</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">Te</div>
+            <div class="text">Tellurium</div>
+        </div>
+        <div class="box iodine rightmost">
+            <div class="imp">
+                <div class="num">53</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">I</div>
+            <div class="text">Iodine</div>
+        </div>
+        <div class="box xenon rightmost">
+            <div class="imp">
+                <div class="num">54</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">Xe</div>
+            <div class="text" id="xenon">Xenon</div>
+        </div>
+    </div>
+
+    <div class="line6">
+        <div class="box cesium">
+            <div class="imp">
+                <div class="num">55</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Cs</div>
+            <div class="text">Cesium</div>
+        </div>
+        <div class="box barium">
+            <div class="imp">
+                <div class="num">56</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Ba</div>
+            <div class="text">Barium</div>
+        </div>
+        <div class="box lanthanum">
+            <div class="imp">
+                <div class="num">57</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">La</div>
+            <div class="text">Lanthanum</div>
+        </div>
+        <div class="box hafnium">
+            <div class="imp">
+                <div class="num">72</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Hf</div>
+            <div class="text">Hafnium</div>
+        </div>
+        <div class="box tantalum">
+            <div class="imp">
+                <div class="num">73</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Ta</div>
+            <div class="text">Tantalum</div>
+        </div>
+        <div class="box tungsten">
+            <div class="imp">
+                <div class="num">74</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">W</div>
+            <div class="text">Tungsten</div>
+        </div>
+        <div class="box rhenium">
+            <div class="imp">
+                <div class="num">75</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Re</div>
+            <div class="text">Rhenium</div>
+        </div>
+        <div class="box osmium">
+            <div class="imp">
+                <div class="num">76</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Os</div>
+            <div class="text">Osmium</div>
+        </div>
+        <div class="box iridium">
+            <div class="imp">
+                <div class="num">77</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Ir</div>
+            <div class="text">Iridium</div>
+        </div>
+        <div class="box platinum">
+            <div class="imp">
+                <div class="num">78</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">Pt</div>
+            <div class="text">Platinum</div>
+        </div>
+        <div class="box gold">
+            <div class="imp">
+                <div class="num">79</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Au</div>
+            <div class="text" id="gold">Gold</div>
+        </div>
+        <div class="box mercury">
+            <div class="imp">
+                <div class="num">80</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">Hg</div>
+            <div class="text">Mercury</div>
+        </div>
+        <div class="box thallium">
+            <div class="imp">
+                <div class="num">81</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">Tl</div>
+            <div class="text">Thallium</div>
+        </div>
+        <div class="box lead">
+            <div class="imp">
+                <div class="num">82</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">Pb</div>
+            <div class="text" id="lead">Lead</div>
+        </div>
+        <div class="box bismuth rightmost">
+            <div class="imp">
+                <div class="num">83</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Bi</div>
+            <div class="text">Bismuth</div>
+        </div>
+        <div class="box polonium rightmost">
+            <div class="imp">
+                <div class="num">84</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Po</div>
+            <div class="text">Polonium</div>
+        </div>
+        <div class="box astatine rightmost">
+            <div class="imp">
+                <div class="num">85</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">At</div>
+            <div class="text" id="astatine">Astatine</div>
+        </div>
+        <div class="box radon rightmost">
+            <div class="imp">
+                <div class="num">86</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Rn</div>
+            <div class="text" id="radon">Radon</div>
+        </div>
+    </div>
+
+    <div class="line7">
+        <div class="box2 francium">
+            <div class="imp">
+                <div class="num">87</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Fr</div>
+            <div class="text">Francium</div>
+        </div>
+        <div class="box2 radium">
+            <div class="imp">
+                <div class="num">88</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Ra</div>
+            <div class="text" id="radium">Radium</div>
+        </div>
+        <div class="box2 actinium">
+            <div class="imp">
+                <div class="num">89</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Ac</div>
+            <div class="text">Actinium</div>
+        </div>
+        <div class="box2 rutherfordium">
+            <div class="imp">
+                <div class="num">104</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Rf</div>
+            <div class="text">Rutherfordium</div>
+        </div>
+        <div class="box2 dubnium">
+            <div class="imp">
+                <div class="num">105</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Db</div>
+            <div class="text">Dubnium</div>
+        </div>
+        <div class="box2 seaborgium">
+            <div class="imp">
+                <div class="num">106</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Sg</div>
+            <div class="text">Seaborgium</div>
+        </div>
+        <div class="box2 bohrium">
+            <div class="imp">
+                <div class="num">107</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Bh</div>
+            <div class="text">Bohrium</div>
+        </div>
+        <div class="box2 hassium">
+            <div class="imp">
+                <div class="num">08</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Hs</div>
+            <div class="text">Hassium</div>
+        </div>
+        <div class="box2 meitnerium">
+            <div class="imp">
+                <div class="num">109</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Mt</div>
+            <div class="text">Meitnerium</div>
+        </div>
+    </div>
+    <div class="blank">
+        <div class="connect"></div>
+        <div class="arrow-right"></div>
+        <div class="connect2"></div>
+    </div>
+
+    <div class="line8">
+        <div class="box cerium">
+            <div class="imp">
+                <div class="num">58</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Ce</div>
+            <div class="text" id="cerium">Cerium</div>
+        </div>
+        <div class="box praseodymium">
+            <div class="imp">
+                <div class="num">59</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Pr</div>
+            <div class="text">Praseodymium</div>
+        </div>
+        <div class="box neodymium">
+            <div class="imp">
+                <div class="num">60</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Nd</div>
+            <div class="text">Neodymium</div>
+        </div>
+        <div class="box promethium">
+            <div class="imp">
+                <div class="num">61</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Pm</div>
+            <div class="text">Promethium</div>
+        </div>
+        <div class="box samarium">
+            <div class="imp">
+                <div class="num">62</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Sm</div>
+            <div class="text">Samarium</div>
+        </div>
+        <div class="box europium">
+            <div class="imp">
+                <div class="num">63</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Eu</div>
+            <div class="text">Europium</div>
+        </div>
+        <div class="box gadolinium">
+            <div class="imp">
+                <div class="num">64</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Gd</div>
+            <div class="text">Gadolinium</div>
+        </div>
+        <div class="box terbium">
+            <div class="imp">
+                <div class="num">65</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Tb</div>
+            <div class="text">Terbium</div>
+        </div>
+        <div class="box dysprosium">
+            <div class="imp">
+                <div class="num">66</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Dy</div>
+            <div class="text">Dysprosium</div>
+        </div>
+        <div class="box holmium">
+            <div class="imp">
+                <div class="num">67</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Ho</div>
+            <div class="text">Holmium</div>
+        </div>
+        <div class="box erbium">
+            <div class="imp">
+                <div class="num">68</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Er</div>
+            <div class="text" id="erbium">Erbium</div>
+        </div>
+        <div class="box thulium rightmost">
+            <div class="imp">
+                <div class="num">69</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">Tm</div>
+            <div class="text" id="thulium">Thulium</div>
+        </div>
+        <div class="box ytterbium rightmost">
+            <div class="imp">
+                <div class="num">70</div>
+                <img src = "half spin.png" alt="spin">
+            </div>
+            <div class="symbol">Yb</div>
+            <div class="text">Ytterbium</div>
+        </div>
+        <div class="box lutetium rightmost">
+            <div class="imp">
+                <div class="num">71</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">Lu</div>
+            <div class="text">Lutetium</div>
+        </div>
+    </div>
+
+    <div class="line9">
+        <div class="box thorium">
+            <div class="imp">
+                <div class="num">90</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Th</div>
+            <div class="text" id="thorium">Thorium</div>
+        </div>
+        <div class="box protactinium">
+            <div class="imp">
+                <div class="num">91</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Pa</div>
+            <div class="text">Protactinium</div>
+        </div>
+        <div class="box uranium">
+            <div class="imp">
+                <div class="num">92</div>
+                <img src = "quadrupole spin.png" alt="spin">
+            </div>
+            <div class="symbol">U</div>
+            <div class="text">Uranium</div>
+        </div>
+        <div class="box neptunium">
+            <div class="imp">
+                <div class="num">93</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Np</div>
+            <div class="text">Neptunium</div>
+        </div>
+        <div class="box plutonium">
+            <div class="imp">
+                <div class="num">94</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Pu</div>
+            <div class="text">Plutonium</div>
+        </div>
+        <div class="box americium">
+            <div class="imp">
+                <div class="num">95</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Am</div>
+            <div class="text">Americium</div>
+        </div>
+        <div class="box curium">
+            <div class="imp">
+                <div class="num">96</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Cm</div>
+            <div class="text" id="curium">Curium</div>
+        </div>
+        <div class="box berkelium">
+            <div class="imp">
+                <div class="num">97</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Bk</div>
+            <div class="text">Berkelium</div>
+        </div>
+        <div class="box californium">
+            <div class="imp">
+                <div class="num">98</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Cf</div>
+            <div class="text">Californium</div>
+        </div>
+        <div class="box einsteinium">
+            <div class="imp">
+                <div class="num">99</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Es</div>
+            <div class="text">Einsteinium</div>
+        </div>
+        <div class="box fermium">
+            <div class="imp">
+                <div class="num">100</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Fm</div>
+            <div class="text">Fermium</div>
+        </div>
+        <div class="box mendelevium rightmost">
+            <div class="imp">
+                <div class="num">101</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Md</div>
+            <div class="text">Mendelevium</div>
+        </div>
+        <div class="box nobelium">
+            <div class="imp">
+                <div class="num">102</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">No</div>
+            <div class="text">Nobelium</div>
+        </div>
+        <div class="box lawrencium">
+            <div class="imp">
+                <div class="num">103</div>
+                <img src = "no spin.png" alt="spin">
+            </div>
+            <div class="symbol">Lr</div>
+            <div class="text">Lawrencium</div>
+        </div>
+    </div>
+    <div class="container" style="display:none;">
+        <div class="button-group">
+            <button class="one"></button>
+            <button class="active"></button>
+            <button class="two"></button>
+            <button class="three"></button>
+            <button class="four"></button>
+            <button class="five"></button>
+            <button class="six" style="display: none;"></button>
+            <button class="seven" style="display: none;"></button>
+            <button class="eight" style="display: none;"></button>
+            <button class="nine" style="display: none;"></button>
+        </div>
+        <div class="data">
+            <span>Abundance :<span class="ab"></span></span>
+            <span class="supspin">Spin :<span class="spin"></span></span>
+            <span class="supgamma">γ :<span class="gamma"></span></span>
+            <span class="supmew">ν₀ :<span class="mew"></span></span>
+            <span class="supque">Q :<span class="que"></span></span>
+        </div>
+    </div>
+    <div class="input-box">
+        <div class="input-section">
+            <h3>Larmor Frequency of <sup>1</sup>H (MHz)</h3>
+            <input class= "input1" type="number" placeholder="Enter frequency">
+            <button class="apply-btn app1">Apply</button>
+        </div>
+  
+        <div class="divider"></div>
+  
+        <div class="input-section2">
+            <h3>Magnetic Field (T)</h3>
+            <input class= "input2" type="number" placeholder="Enter magnetic field">
+            <button class="apply-btn app2">Apply</button>
+        </div>
+    </div>
+    <footer>
+        <div class = "foot">
+            <div class="lab">
+                © 2025 by MagRes@IISc
+            </div>
+            <div class = "name">
+                Webpage design: Aditya Swaroop
+            </div>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
